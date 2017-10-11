@@ -1,0 +1,17 @@
+{
+  "name": "zen-ui-theme",
+  "theme": "ui",
+  "version": "0.0.1",
+  "description": "A distraction free UI theme",
+  "keywords": [
+    "ui",
+    "theme",
+    "zen",
+    "distraction free"
+  ],
+  "repository": "https://github.com/monsieurluge/zen-ui-theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
