@@ -1,16 +1,3 @@
-
-// UI Variables
-// -------------------
-
-// These are the official UI variables that every UI theme should define.
-// It allows other packages to match your theme.
-
-// Overrides: atom/static/variables/ui-variables.less
-
-// Try to edit some of the values below to see your theme change.
-// A good start is to change the color of the `@base-background-color` variable.
-
-
 // Text Colors
 @text-color:           hsl(0,0%,66%);
 @text-color-subtle:    hsl(0,0%,50%);
@@ -33,8 +20,10 @@
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+// @base-background-color: @dark-color;
+@base-background-color: hsl(208, 100%, 50%);
+// @base-border-color:     @accent-color;
+@base-border-color:     hsl(208, 100%, 50%);
 
 // Component colors
 @pane-item-background-color: @base-background-color;

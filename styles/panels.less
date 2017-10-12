@@ -1,27 +1,28 @@
+// overrides: atom/static/panels.less
 
-// Panels
-// -------------------
+.tool-panel,
+.panel,
+.atom-panel {
+    background-color: inherit;
+}
 
-// Overrides: atom/static/panels.less
+atom-panel-container.left atom-dock {
+  opacity: 0.4;
+  transition: opacity 0.5s;
+}
+
+atom-panel-container.left:hover atom-dock {
+    opacity: 1;
+}
 
 .panel-heading {
-  border-bottom: 1px solid @panel-heading-border-color;
-  background-color: @panel-heading-background-color;
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: @accent-color;
 }
 
 .inset-panel {
-  background-color: @inset-panel-background-color;
+  background-color: @dark-color;
   .panel-heading {
-    background-color: lighten(@inset-panel-background-color, 4%);
+    background-color: lighten(@dark-color, 3%);
   }
-}
-
-
-// Modal -------------------
-// Used on top of the editor, like the Command Palette.
-
-atom-panel.modal {
-  border: 1px solid @overlay-border-color;
-  border-top: none;
-  box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
 }
