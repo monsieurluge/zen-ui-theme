@@ -1,9 +1,15 @@
-.tree-view-resizer {
-  border-right: 1px solid @base-border-color;
+.list-group .selected,
+.list-tree .selected {
+    color: @accent-color;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+
+    &:before {
+        content: none;
+    }
 }
 
-.tree-view .tree-view-root {
-  .list-item.selected {
-    color: @text-color-selected;
-  }
+.list-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
